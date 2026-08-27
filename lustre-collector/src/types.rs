@@ -209,14 +209,6 @@ pub mod lnet_exports {
     }
 
     #[derive(serde::Serialize, serde::Deserialize)]
-    pub struct Global {
-        numa_range: Option<i64>,
-        max_intf: i64,
-        discovery: i64,
-        drop_asym_route: i64,
-    }
-
-    #[derive(serde::Serialize, serde::Deserialize)]
     pub struct Peer {
         #[serde(rename = "primary nid")]
         pub primary_nid: String,
